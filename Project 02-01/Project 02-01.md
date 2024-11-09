@@ -8,3 +8,5 @@ input image so that it does not exceed the area available in a sheet of size $8.
 (b) Write a program to generate a test pattern image consisting of a gray scale wedge of size $256 \times 256$, whose first column is all 0's, the next column is all 1's, and so on, with the last column being 255's. Print this image using your gray-scale printing program.
 
 (c) Print book Figs. 2.22(a) through (c) using your gray-scale printing program. Do your results agree with the conclusions arrived at in the text in pgs. 61-62 and Fig. 2.23? Explain. You will need to download Figs. 2.22(a) through (c).
+
+<img src=".\figure.png">  
