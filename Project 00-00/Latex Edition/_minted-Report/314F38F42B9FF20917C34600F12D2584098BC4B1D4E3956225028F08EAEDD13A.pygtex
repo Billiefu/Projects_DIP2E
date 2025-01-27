@@ -1,0 +1,9 @@
+\begin{Verbatim}[commandchars=\\\{\},codes={\catcode`\$=3\catcode`\^=7\catcode`\_=8\relax}]
+\PYG{k}{function}\PYG{+w}{ }[result]\PYG{+w}{ }\PYG{p}{=}\PYG{+w}{ }\PYG{n+nf}{adaption}\PYG{p}{(}image\PYG{p}{)}
+\PYG{+w}{    }\PYG{p}{[}\PYG{n}{row}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{col}\PYG{p}{]}\PYG{+w}{ }\PYG{p}{=}\PYG{+w}{ }\PYG{n+nb}{size}\PYG{p}{(}\PYG{n+nb}{image}\PYG{p}{)}\PYG{p}{;}
+\PYG{+w}{    }\PYG{n}{rscale}\PYG{+w}{ }\PYG{p}{=}\PYG{+w}{ }\PYG{n}{row}\PYG{+w}{ }\PYG{o}{/}\PYG{+w}{ }\PYG{p}{(}\PYG{l+m+mi}{816}\PYG{o}{/}\PYG{l+m+mi}{3}\PYG{p}{)}\PYG{p}{;}
+\PYG{+w}{    }\PYG{n}{cscale}\PYG{+w}{ }\PYG{p}{=}\PYG{+w}{ }\PYG{n}{col}\PYG{+w}{ }\PYG{o}{/}\PYG{+w}{ }\PYG{p}{(}\PYG{l+m+mi}{1056}\PYG{o}{/}\PYG{l+m+mi}{3}\PYG{p}{)}\PYG{p}{;}
+\PYG{+w}{    }\PYG{n+nb}{scale}\PYG{+w}{ }\PYG{p}{=}\PYG{+w}{ }\PYG{n+nb}{max}\PYG{p}{(}\PYG{n}{rscale}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{cscale}\PYG{p}{)}\PYG{p}{;}
+\PYG{+w}{    }\PYG{n}{result}\PYG{+w}{ }\PYG{p}{=}\PYG{+w}{ }\PYG{n+nb}{imresize}\PYG{p}{(}\PYG{n+nb}{image}\PYG{p}{,}\PYG{+w}{ }\PYG{l+m+mi}{1}\PYG{o}{/}\PYG{n+nb}{scale}\PYG{p}{)}\PYG{p}{;}
+\PYG{k}{end}
+\end{Verbatim}

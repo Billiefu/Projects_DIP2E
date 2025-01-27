@@ -1,0 +1,134 @@
+\documentclass[a4paper, utk8]{ctexart}
+\usepackage[fontset=Fandol]{ctex}
+\usepackage{anyfontsize}
+\usepackage{subfigure}
+\usepackage{abstract}
+\usepackage{amsfonts}
+\usepackage{appendix}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+\usepackage{geometry}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{caption}
+\usepackage{lipsum}
+\usepackage{minted}
+
+\setsansfont{Latin Modern Roman}
+\geometry{a4paper,left=31mm,right=31mm,top=25mm,bottom=25mm}
+\CTEXsetup[format={\Large \bfseries}]{section}
+\setlength{\parindent}{2em}
+\pagestyle{fancy}
+\fancyhf{}
+% If there is no space for project name
+% you can change the position and ignore "Digital Image Processing"
+\fancyhead[C]{Project Name}
+\fancyhead[L]{Digital Image Processing}
+\fancyhead[R]{Project 02-01}
+\fancyfoot[C]{\thepage}
+\fancyfoot[L,R]{}
+
+\renewcommand{\figurename}{Fig}
+\renewcommand{\refname}{References}
+\renewcommand{\tablename}{Table}
+
+\title{\bfseries Project XX-XX \ \ Project Name}
+\author{\fangsong Your Name \quad Your Number}
+\date{\fangsong Sun Yat-sen University, School of Computer Science and Engineering}
+
+\begin{document}
+
+    \begin{titlepage}
+	\centering
+	\rule{\textwidth}{1pt}
+	\vspace{0.02\textheight}
+
+	{\LARGE Digital Image Processing \ \ Project XX-XX}
+
+	\vspace{0.02\textheight}
+
+	{\Huge \bfseries Project Name}
+
+	\vspace{0.025\textheight}
+	\rule{0.83\textwidth}{0.4pt}
+	\vspace{0.05\textheight} 
+	\begin{figure}[htbp]
+		\centering
+		\includegraphics[width=8cm, height=8cm]{./figure/Department_Sign.jpg}
+	\end{figure}
+
+	\vspace{0.05\textheight} 
+	{\Large Course Number：\textsc{XXX}}
+
+	\vspace{0.025\textheight} 
+	{\Large Student's Name：\textsc{XXX}}
+
+    \vspace{0.025\textheight} 
+    {\Large Student's Number：\textsc{XXX}}
+
+    \vspace{0.025\textheight} 
+	{\Large Advisor's Name / Title：\textsc{XXX}}
+ 
+    \vspace{0.025\textheight} 
+	{\Large Date Due：\textsc{XXX}}
+
+    \vspace{0.05\textheight} 
+	\vfill
+
+	{\large XX February, 2025}
+	\vspace{0.1\textheight}
+	\rule{\textwidth}{1pt}
+    \end{titlepage}
+    \let\cleardoublepage\clearpage
+
+    \maketitle
+
+    \renewcommand{\abstractname}{\large \textbf{Abstract}}
+    \begin{abstract}
+        Replace this text to complete the Abstract section.
+	
+        \noindent{\textbf{\heiti Keyword：}Replace this text to complete the Key words section.}
+    \end{abstract}
+    
+    \section{Introduction}
+    
+    Replace this text to complete this section. This section is used to simply describe the principles involved in the project, as well as to describe the problems that the project needs to solve.
+    
+    \section{Technical Discussion}
+    
+    \subsection{Principles of Method}
+    
+    Replace this text to complete this section. This section is used to describe the basic idea and code principles of the project.
+    
+    \subsection{Code Explanation}
+    
+    Replace this text to complete this section. This part is used to explain the written code.
+    
+    \subsection{Optimize Discussion}
+    
+    Replace this text to complete this section. If there are places where the code in this section can be optimized, please point them out here and discuss them.
+    
+    \section{Experiment Results}
+    
+    \subsection{Experiment Setting}
+    
+    Replace this text to complete this section. This section is used to describe the experimental design based on the project content, as well as the parameter settings for the experiment.
+    
+    \subsection{Results Discussion}
+    
+    Replace this text to complete this section. This section is used to present the experimental results and to discuss them.
+    
+    \section{Conclusion}
+    
+    Replace this text to complete this section. This section is used to summarize based on the content of the written report.
+
+    \let\cleardoublepage\clearpage
+
+    \begin{thebibliography}{99}  
+	\bibitem{ref1}Author. Title[J]. Journal Name, Year, Volume(Issue): Page range.
+	\bibitem{ref2}Author. Title[C]. Location: Publisher, Year: Page range.
+	\bibitem{ref3}Author. Title[M]. Location: Publisher, Year.
+	\bibitem{ref4}Author. Title[EB/OL]. Published/Updated Date[CitedDate]. URL.
+    \end{thebibliography}
+
+\end{document}
