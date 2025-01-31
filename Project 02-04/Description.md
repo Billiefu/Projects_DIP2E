@@ -20,8 +20,8 @@ Here, the four coefficients can be determined by solving a system of four unknow
 
 ### Result
 
-ddd
+During the process of comparing the generated results with the original input image to construct the loss image, we observed that the loss is primarily concentrated in the edge regions of the image. The analysis of the loss in the edge areas is consistent with the findings from the analysis conducted in Project 02-03. When applying the bilinear interpolation algorithm for image processing, we noticed that the average loss is approximately 2.77 grayscale units. This value is lower than the average loss obtained with the nearest neighbor interpolation algorithm, indicating that bilinear interpolation can reduce the misjudgment of edge pixels to some extent.
 
 <center class ='img'>
-<img src="../figure/02-03/result.png" width="80%">
+<img src="../figure/02-03/result.png" width="60%">
 </center>
