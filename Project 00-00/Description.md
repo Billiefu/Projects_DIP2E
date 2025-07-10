@@ -1,5 +1,8 @@
 ## Project 00-00 &emsp; Suggested format for submitting project reports
 
+> Copyright © 2002 Prentice Hall
+> Copyright © 2025 Fu Tszkok
+
 ### Description
 
 To address the requirements for course-related lab reports, the format recommendations have been consolidated and improved. To ensure convenience for instructors or teaching assistants when grading lab reports for relevant courses, these recommendations are continued here. It is advised that lab reports be kept as concise as possible, with the experimental content written in clear and straightforward language. Below is the suggested format for lab reports. Additionally, for the lab report format mentioned below, Word and LaTeX templates will be provided for those who need them.

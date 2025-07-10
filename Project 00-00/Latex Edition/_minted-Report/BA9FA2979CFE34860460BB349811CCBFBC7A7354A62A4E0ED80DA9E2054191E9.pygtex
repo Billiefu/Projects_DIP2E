@@ -1,9 +1,0 @@
-\begin{Verbatim}[commandchars=\\\{\},codes={\catcode`\$=3\catcode`\^=7\catcode`\_=8\relax}]
-\PYG{k}{def} \PYG{n+nf}{adaption}\PYG{p}{(}\PYG{n}{image}\PYG{p}{)}\PYG{p}{:}
-    \PYG{n}{row}\PYG{p}{,} \PYG{n}{col} \PYG{o}{=} \PYG{n}{image}\PYG{o}{.}\PYG{n}{shape}
-    \PYG{n}{rscale} \PYG{o}{=} \PYG{n}{row} \PYG{o}{/} \PYG{p}{(}\PYG{l+m+mi}{816} \PYG{o}{/} \PYG{l+m+mi}{3}\PYG{p}{)}
-    \PYG{n}{cscale} \PYG{o}{=} \PYG{n}{col} \PYG{o}{/} \PYG{p}{(}\PYG{l+m+mi}{1056} \PYG{o}{/} \PYG{l+m+mi}{3}\PYG{p}{)}
-    \PYG{n}{scale} \PYG{o}{=} \PYG{l+m+mi}{1} \PYG{o}{/} \PYG{n+nb}{max}\PYG{p}{(}\PYG{n}{cscale}\PYG{p}{,} \PYG{n}{rscale}\PYG{p}{)}
-    \PYG{n}{result} \PYG{o}{=} \PYG{n}{cv}\PYG{o}{.}\PYG{n}{resize}\PYG{p}{(}\PYG{n}{image}\PYG{p}{,} \PYG{p}{(}\PYG{l+m+mi}{0}\PYG{p}{,} \PYG{l+m+mi}{0}\PYG{p}{)}\PYG{p}{,} \PYG{k+kc}{None}\PYG{p}{,} \PYG{n}{scale}\PYG{p}{,} \PYG{n}{scale}\PYG{p}{)}
-    \PYG{k}{return} \PYG{n}{result}
-\end{Verbatim}
