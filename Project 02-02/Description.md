@@ -1,5 +1,8 @@
 ## Project 02-02 &emsp; Reducing the Number of Gray Levels in an Image
 
+> Copyright © 2002 Prentice Hall
+> Copyright © 2025 Fu Tszkok
+
 ### Question
 
 (a) Write a computer program capable of reducing the number of gray levels in a image from 256 to 2, in integer powers of 2. The desired number of gray levels needs to be a variable input to your program.

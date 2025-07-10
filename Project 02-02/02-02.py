@@ -1,6 +1,17 @@
 """
-Project 02-02  Reducing the Number of Gray Levels in an Image
-Author: Billiefu
+Copyright (C) 2025 Fu Tszkok
+
+:module: Project 02-02
+:function: Reducing the Number of Gray Levels in an Image
+:author: Fu Tszkok
+:date: 2025-01-28
+:license: AGPLv3 + Additional Restrictions (Non-Commercial Use)
+
+This code is licensed under GNU Affero General Public License v3 (AGPLv3) with additional terms.
+- Commercial use prohibited (including but not limited to sale, integration into commercial products)
+- Academic use requires clear attribution in code comments or documentation
+
+Full AGPLv3 text available in LICENSE file or at <https://www.gnu.org/licenses/agpl-3.0.html>
 """
 
 import cv2 as cv
