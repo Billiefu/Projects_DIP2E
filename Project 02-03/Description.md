@@ -1,5 +1,8 @@
 ## Project 02-03 &emsp; Zooming and Shrinking Images by Pixel Replication
 
+> Copyright © 2002 Prentice Hall
+> Copyright © 2025 Fu Tszkok
+
 ### Question
 
 (a) Write a computer program capable of zooming and shrinking an image by pixel replication. Assume that the desired zoom/shrink factors are integers. You may ignore aliasing effects. You will need to download `rose1024.bmp`.
