@@ -1,6 +1,6 @@
-## Laboratory Projects for Digital Image Processing (Second Edition)
+# Laboratory Projects for Digital Image Processing (Second Edition)
 
-### Description
+## Description
 
 In order to better assist students and colleagues dedicated to learning digital image processing, this project repository will provide experimental descriptions and corresponding code implementation results for related experiments in digital image processing. This project repository is built upon the laboratory projects of the classic textbook "Digital Image Processing" by Rafael C. Gonzalez and Richard E. Woods, second edition. Here, we first want to express our deepest respect to Professor Lai Jianhuang from Sun Yat-sen University, for personally teaching us this challenging course. At the same time, we also want to thank our teaching assistant Ye Biaohua for providing valuable guidance and assistance with our laboratory projects codes. Despite this, we are fully aware that there is still room for improvement and enhancement in some projects within the repository. Therefore, we sincerely welcome any valuable opinions and suggestions from students and colleagues to help us continuously improve and enhance the quality of the projects.
 
@@ -8,7 +8,22 @@ All projects in this repository can be completed with the assistance of relevant
 
 We encourage students and colleagues to independently develop basic frameworks based on the principles of various algorithms and then use libraries to assist in completing more challenging parts within the framework. A good example is implementing a two-dimensional Fast Fourier Transform (2D FFT). A recommended approach is to utilize the function for directly computing 2D FFTs provided by the `Numpy` library, but also to write custom functions for tasks such as centering the transform, multiplying it by a filter function, and obtaining the spectrum.
 
-### Environment
+## Copyright Statement
+
+All original code in this repository is licensed under the **[GNU Affero General Public License v3](LICENSE)**, with additional usage restrictions specified in the **[Supplementary Terms](ADDITIONAL_TERMS.md)**. Users must expressly comply with the following conditions:
+
+* **Commercial Use Restriction**
+  Any form of commercial use, integration, or distribution requires prior written permission.
+* **Academic Citation Requirement**When referenced in research or teaching, proper attribution must include:
+
+  * Original author credit
+  * Link to this repository
+* **Academic Integrity Clause**
+  Prohibits submitting this code (or derivatives) as personal academic work without explicit authorization.
+
+The full legal text is available in the aforementioned license documents. Usage of this repository constitutes acceptance of these terms.
+
+## Environment
 
 To run the code in this experiment repository, you need to set up the required environment. Although configuring a Conda environment is not particularly difficult, this repository provides a pre-defined environment setup stored in the `environment.yml` file located in the root directory.
 
@@ -82,3 +97,10 @@ The description and solution for the following experimental projects will be men
 |  Proj 12-02  | Minimum Distance Classifier                             |               |   Todo   |
 |  Proj 12-03  | Bayes Classifier                                        |               |   Todo   |
 |  Proj 12-04  | Perceptron Classifier                                   |               |   Todo   |
+
+## Contact & Authorization
+
+For technical inquiries, academic collaboration, or commercial licensing, contact the copyright holder via:
+
+* **Academic Email**: `futk@mail2.sysu.edu.cn`
+* **Project Discussions**: [Github Issues](https://github.com/Billiefu/Projects_DIP2E/issues)
