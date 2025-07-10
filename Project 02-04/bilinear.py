@@ -1,5 +1,17 @@
 """
-The function package from Project 02-04 Zooming and Shrinking Images by Bilinear Interpolation
+Copyright (C) 2025 Fu Tszkok
+
+:module: bilinear
+:function: The function package from Project 02-04 Zooming and Shrinking Images by Bilinear Interpolation
+:author: Fu Tszkok
+:date: 2025-01-28
+:license: AGPLv3 + Additional Restrictions (Non-Commercial Use)
+
+This code is licensed under GNU Affero General Public License v3 (AGPLv3) with additional terms.
+- Commercial use prohibited (including but not limited to sale, integration into commercial products)
+- Academic use requires clear attribution in code comments or documentation
+
+Full AGPLv3 text available in LICENSE file or at <https://www.gnu.org/licenses/agpl-3.0.html>
 """
 
 import numpy as np

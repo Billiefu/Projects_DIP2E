@@ -1,5 +1,8 @@
 ## Project 02-04 &emsp; Zooming and Shrinking Images by Bilinear Interpolation [Multiple Uses]
 
+> Copyright © 2002 Prentice Hall
+> Copyright © 2025 Fu Tszkok
+
 ### Question
 
 (a) Write a computer program capable of zooming and shrinking an image bybilinear interpolation. The input to your program is the desired size of the resultingimage in the horizontal and vertical direction. You may ignore aliasing effects.
