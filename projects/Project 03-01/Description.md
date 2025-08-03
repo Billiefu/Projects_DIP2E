@@ -1,5 +1,7 @@
 ## Project 03-01 &emsp; Image Enhancement Using Intensity Transformations
 
+> Copyright © 2002 Prentice Hall &emsp; Copyright © 2025 Fu Tszkok
+
 ### Question
 
 The focus of this project is to experiment with intensity transformations to enhance an image. Download `spine.bmp` and enhance it using
