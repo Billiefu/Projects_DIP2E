@@ -37,11 +37,11 @@ Also known as gamma correction, this transformation offers more flexible control
 We tested different values of parameter $c$, such as $c=1,2.5,5$. Observations revealed that logarithmic transformation effectively improved the contrast between spinal bones and surrounding tissues in the image. As $c$ increased, the brightness enhancement became more pronounced, making skeletal details in darker regions stand out more clearly. Notably, when $c=1$, if the result was linearly scaled during display, the details in darker regions became significantly more prominent.
 
 <center class ='img'>
-<img src="../figures/03-01/log_result_1.png" width="100%">
+<img src="../../figures/03-01/log_result_1.png" width="100%">
 </center>
 
 <center class ='img'>
-<img src="../figures/03-01/log_result_2.png" width="100%">
+<img src="../../figures/03-01/log_result_2.png" width="100%">
 </center>
 
 **Power-Law Transformation Experiment**
@@ -49,11 +49,11 @@ We tested different values of parameter $c$, such as $c=1,2.5,5$. Observations r
 We tested multiple combinations of parameters $c$ and $\gamma$. By adjusting $\gamma$, we observed significant changes in the enhancement effect. When $\gamma<1$, the image brightened, particularly highlighting details in darker regions. For example, with $\gamma=0.6$ or $0.4$, we could clearly see the textures inside and around the spinal bones. Conversely, when $\gamma > 1$, the image darkened overall, which was counterproductive to our goal of enhancing dark-region details. Comparing results under different parameters, we found that selecting a smaller $\gamma$ value (e.g., $\gamma=0.6$ or $0.4$) yielded the best visual enhancement, as it effectively brightened darker regions and made their details clearly visible. Notably, when observing the result with $c=1$ and $\gamma=0.6$, the processing effect on darker regions was excellent, regardless of whether linear scaling was applied.
 
 <center class ='img'>
-<img src="../figures/03-01/pow_result_1.png" width="100%">
+<img src="../../figures/03-01/pow_result_1.png" width="100%">
 </center>
 
 <center class ='img'>
-<img src="../figures/03-01/pow_result_2.png" width="100%">
+<img src="../../figures/03-01/pow_result_2.png" width="100%">
 </center>
 
 **Key Differences Between the Two Transformations**
