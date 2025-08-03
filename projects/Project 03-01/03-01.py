@@ -19,35 +19,52 @@ import cv2 as cv
 import numpy as np
 import matplotlib.pyplot as plt
 
-image = cv.imread('../data/spine.bmp', cv.IMREAD_GRAYSCALE)
-image = np.float64(image)
+# Load a grayscale image and normalize pixel values to the range [0, 1].
+image = cv.imread('../../images/spine.bmp', cv.IMREAD_GRAYSCALE)
+image = np.float64(image) / 255.0
+
+# Display the original image
 plt.axis('off')
-plt.imshow(image, cmap='gray', vmin=0, vmax=255)
+plt.imshow(image, cmap='gray', vmin=0, vmax=1)
 plt.title("Original Image")
 plt.show()
 
-# Experiment of Log Transformation
-C = [15, 30, 45]
+
+# Define the constant 'c' for the logarithmic transformation.
+C = [1, 2.5, 5]
+
+# Iterate through different 'c' values to apply the transformation.
 for c in C:
+    # Initialize a new image array for the result.
     result = np.zeros((image.shape[0], image.shape[1]))
+    # Apply the logarithmic transformation to each pixel: s = c * log(1 + r).
     for i in range(image.shape[0]):
         for j in range(image.shape[1]):
             result[i, j] = c * math.log(1 + image[i, j])
+
+    # Display the transformed image.
     plt.axis('off')
-    plt.imshow(result, cmap='gray', vmin=0, vmax=255)
+    plt.imshow(result, cmap='gray', vmin=0, vmax=1)
     plt.title(f"c={c} Logarithmic Image")
     plt.show()
 
-# Experiment of Power-law Transformation
-C = [5, 10, 15]
-Gamma = [0.6, 0.4, 0.3]
+
+# Define constants 'c' and 'gamma' for the power-law transformation.
+C = [0.8, 1, 1.5]
+Gamma = [1.5, 0.6, 0.4]
+
+# Iterate through different 'c' and 'gamma' values.
 for c in C:
     for gamma in Gamma:
+        # Initialize a new image array for the result.
         result = np.zeros((image.shape[0], image.shape[1]))
+        # Apply the power-law transformation to each pixel: s = c * r^gamma.
         for i in range(image.shape[0]):
             for j in range(image.shape[1]):
                 result[i, j] = c * math.pow(image[i, j], gamma)
+
+        # Display the transformed image.
         plt.axis('off')
-        plt.imshow(result, cmap='gray', vmin=0, vmax=255)
+        plt.imshow(result, cmap='gray', vmin=0, vmax=1)
         plt.title(f"c={c}, γ={gamma} Power-law Image")
         plt.show()
