@@ -1,3 +1,18 @@
+%!TEX program = xelatex
+%% Copyright (C) 2025 Fu Tszkok
+%%
+%% This file contains LaTeX source code for the report template,
+%% released under AGPLv3 license.
+%% Full license text available in LICENSE file at project root,
+%% with additional restrictions in ADDITIONAL_TERMS.md.
+%%
+%% Commercial use prohibited. Academic use requires retention of this notice.
+%% Source repository: https://github.com/Billiefu/Projects_DIP2E
+
+% SPDX-FileCopyrightText: 2025 Fu Tszkok
+% SPDX-License-Identifier: AGPL-3.0-or-later
+% SPDX-Additional-Clauses: see ADDITIONAL_TERMS.md
+
 \documentclass[a4paper, utk8]{ctexart}
 \usepackage[fontset=Fandol]{ctex}
 \usepackage{anyfontsize}
@@ -7,6 +22,7 @@
 \usepackage{appendix}
 \usepackage{enumitem}
 \usepackage{fancyhdr}
+\usepackage{fontspec}
 \usepackage{geometry}
 \usepackage{graphicx}
 \usepackage{amsmath}
@@ -39,45 +55,45 @@
 \begin{document}
 
     \begin{titlepage}
-	\centering
-	\rule{\textwidth}{1pt}
-	\vspace{0.02\textheight}
+        \centering
+        \rule{\textwidth}{1pt}
+        \vspace{0.02\textheight}
 
-	{\LARGE Digital Image Processing \ \ Project XX-XX}
+        {\LARGE Digital Image Processing \ \ Project XX-XX}
 
-	\vspace{0.02\textheight}
+        \vspace{0.02\textheight}
 
-	{\Huge \bfseries Project Name}
+        {\Huge \bfseries Project Name}
 
-	\vspace{0.025\textheight}
-	\rule{0.83\textwidth}{0.4pt}
-	\vspace{0.05\textheight} 
-	\begin{figure}[htbp]
-		\centering
-		\includegraphics[width=8cm, height=8cm]{./figure/Department_Sign.jpg}
-	\end{figure}
+        \vspace{0.025\textheight}
+        \rule{0.83\textwidth}{0.4pt}
+        \vspace{0.05\textheight}
+        \begin{figure}[htbp]
+            \centering
+            \includegraphics[width=8cm, height=8cm]{./figure/Department_Sign.jpg}
+        \end{figure}
 
-	\vspace{0.05\textheight} 
-	{\Large Course Number：\textsc{XXX}}
+        \vspace{0.05\textheight}
+        {\Large Course Number：\textsc{XXX}}
 
-	\vspace{0.025\textheight} 
-	{\Large Student's Name：\textsc{XXX}}
+        \vspace{0.025\textheight}
+        {\Large Student's Name：\textsc{XXX}}
 
-    \vspace{0.025\textheight} 
-    {\Large Student's Number：\textsc{XXX}}
+        \vspace{0.025\textheight}
+        {\Large Student's Number：\textsc{XXX}}
 
-    \vspace{0.025\textheight} 
-	{\Large Advisor's Name / Title：\textsc{XXX}}
- 
-    \vspace{0.025\textheight} 
-	{\Large Date Due：\textsc{XXX}}
+        \vspace{0.025\textheight}
+        {\Large Advisor's Name / Title：\textsc{XXX}}
 
-    \vspace{0.05\textheight} 
-	\vfill
+        \vspace{0.025\textheight}
+        {\Large Date Due：\textsc{XXX}}
 
-	{\large XX February, 2025}
-	\vspace{0.1\textheight}
-	\rule{\textwidth}{1pt}
+        \vspace{0.05\textheight}
+        \vfill
+
+        {\large XX February, 2025}
+        \vspace{0.1\textheight}
+        \rule{\textwidth}{1pt}
     \end{titlepage}
     \let\cleardoublepage\clearpage
 
