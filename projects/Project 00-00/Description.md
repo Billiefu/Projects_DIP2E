@@ -1,7 +1,6 @@
 ## Project 00-00 &emsp; Suggested format for submitting project reports
 
 > Copyright © 2002 Prentice Hall
-> Copyright © 2025 Fu Tszkok
 
 ### Description
 
