@@ -1,5 +1,7 @@
 # Laboratory Projects for Digital Image Processing (Second Edition)
 
+> Copyright © 2002 Prentice Hall &emsp; Copyright © 2025 Fu Tszkok
+
 ## Description
 
 In order to better assist students and colleagues dedicated to learning digital image processing, this project repository will provide experimental descriptions and corresponding code implementation results for related experiments in digital image processing. This project repository is built upon the laboratory projects of the classic textbook "Digital Image Processing" by Rafael C. Gonzalez and Richard E. Woods, second edition. Here, we first want to express our deepest respect to *Professor Lai Jianhuang* from Sun Yat-sen University, for personally teaching us this challenging course. At the same time, we also want to thank our teaching assistant *Ye Biaohua* for providing valuable guidance and assistance with our laboratory projects codes. Despite this, we are fully aware that there is still room for improvement and enhancement in some projects within the repository. Therefore, we sincerely welcome any valuable opinions and suggestions from students and colleagues to help us continuously improve and enhance the quality of the projects.
