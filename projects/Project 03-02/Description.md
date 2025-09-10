@@ -1,5 +1,7 @@
 ## Project 03-02 &emsp; Histogram Equalization [Multiple Uses]
 
+> Copyright © 2002 Prentice Hall &emsp; Copyright © 2025 Fu Tszkok
+
 ### Question
 
 (a) Write a computer program for computing the histogram of an image.
