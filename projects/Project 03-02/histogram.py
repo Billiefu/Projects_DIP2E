@@ -1,13 +1,11 @@
 """
 Copyright (C) 2025 Fu Tszkok
 
-:module: Project 03-02
-:function: Histogram Equalization (optimal) [Multiple Uses]
+:module: histogram
+:function: The function package from Project 03-02 Histogram Equalization
 :author: Fu Tszkok
 :date: 2025-01-28
 :license: AGPLv3 + Additional Restrictions (Non-Commercial Use)
-
-The function package from Project 03-02 Histogram Equalization
 
 This code is licensed under GNU Affero General Public License v3 (AGPLv3) with additional terms.
 - Commercial use prohibited (including but not limited to sale, integration into commercial products)
