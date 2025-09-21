@@ -12,7 +12,7 @@ We encourage students and colleagues to independently develop basic frameworks b
 
 ## Copyright Statement
 
-All original code in this repository is licensed under the **[GNU Affero General Public License v3](LICENSE)**, with additional usage restrictions specified in the **[Supplementary Terms](ADDITIONAL_TERMS.md)**. All original images in this repository are protected under the copyright of the original author, the original book and their original providers. Users must expressly comply with the following conditions:
+All original code in this repository is licensed under the **[GNU Affero General Public License v3](LICENSE)**, with additional usage restrictions specified in the **[Supplementary Terms](ADDITIONAL_TERMS.md)**. All original images in this repository are protected under the copyright of the original author, the original book and [**their original providers**](https://www.imageprocessingplace.com/root_files_V3/image_databases.htm). Users must expressly comply with the following conditions:
 
 * **Commercial Use Restriction**
   Any form of commercial use, integration, or distribution requires prior written permission.
