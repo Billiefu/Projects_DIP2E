@@ -84,10 +84,10 @@ The description and solution for the following experimental projects will be men
 |  Proj 08-04  | Wavelet Coding                                          |              |   Todo   |
 |  Proj 09-01  | Morphological and Other Set Operations                  | Multiple uses | Finished |
 |  Proj 09-02  | Boundary Extraction                                     | Multiple uses | Finished |
-|  Proj 09-03  | Connected Components                                    | Multiple uses |   Todo   |
+|  Proj 09-03  | Connected Components                                    | Multiple uses | Finished |
 |  Proj 09-04  | Morphological Solution to Problem 9.27                  |              |   Todo   |
 |  Proj 10-01  | Edge Detection Combined with Smoothing and Thresholding |              | Finished |
-|  Proj 10-02  | Global Thresholding                                     | Multiple uses |   Todo   |
+|  Proj 10-02  | Global Thresholding                                     | Multiple uses | Finished |
 |  Proj 10-03  | Optimum Thresholding                                    |              |   Todo   |
 |  Proj 10-04  | Region Growing                                          |              |   Todo   |
 |  Proj 11-01  | Skeletons                                               |              |   Todo   |
