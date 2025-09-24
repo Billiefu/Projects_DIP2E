@@ -88,8 +88,8 @@ The description and solution for the following experimental projects will be men
 |  Proj 09-04  | Morphological Solution to Problem 9.27                  |              |   Todo   |
 |  Proj 10-01  | Edge Detection Combined with Smoothing and Thresholding |              | Finished |
 |  Proj 10-02  | Global Thresholding                                     | Multiple uses | Finished |
-|  Proj 10-03  | Optimum Thresholding                                    |              |   Todo   |
-|  Proj 10-04  | Region Growing                                          |              |   Todo   |
+|  Proj 10-03  | Optimum Thresholding                                    |              | Finished |
+|  Proj 10-04  | Region Growing                                          |              | Finished |
 |  Proj 11-01  | Skeletons                                               |              |   Todo   |
 |  Proj 11-02  | Fourier Descriptors                                     | Multiple uses |   Todo   |
 |  Proj 11-03  | Texture                                                 |              |   Todo   |
