@@ -1,8 +1,8 @@
 """
 Copyright (C) 2025 Fu Tszkok
 
-:module: Project 10-02 [Multiple Uses]
-:function: Global Thresholding
+:module: threshold
+:function: The function package from Project 10-02 Global Thresholding
 :author: Fu Tszkok
 :date: 2025-09-24
 :license: AGPLv3 + Additional Restrictions (Non-Commercial Use)
@@ -15,8 +15,7 @@ Full AGPLv3 text available in LICENSE file or at <https://www.gnu.org/licenses/a
 """
 
 import cv2 as cv
-
-from histogram import *
+import numpy as np
 
 
 def global_thresholding(image, delta_T=1e-2):
@@ -61,28 +60,3 @@ def global_thresholding(image, delta_T=1e-2):
     _, thresholded_image = cv.threshold(image, threshold, 255, cv.THRESH_BINARY)
 
     return thresholded_image, threshold
-
-
-# Load the grayscale image.
-image = cv.imread('../../images/polymersomes.bmp', cv.IMREAD_GRAYSCALE)
-# Calculate and display the histogram of the original image.
-count, x = histogram(image)
-
-plt.axis('off')
-plt.imshow(image, cmap='gray', vmin=0, vmax=255)
-plt.title('Original Image')
-plt.show()
-
-plt.bar(x, count)
-plt.title('Histogram (self)')
-plt.show()
-
-# Apply the iterative global thresholding algorithm to segment the image.
-segmented_image, threshold = global_thresholding(image)
-print(f"The global threshold is: {threshold}")
-
-# Display the segmented image with the final threshold value in the title.
-plt.axis('off')
-plt.imshow(segmented_image, cmap='gray')
-plt.title(f'Segmented Image (Threshold = {threshold})')
-plt.show()
