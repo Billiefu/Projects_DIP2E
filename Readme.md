@@ -89,6 +89,7 @@ The description and solution for the following experimental projects will be men
 |  Proj 10-01  | Edge Detection Combined with Smoothing and Thresholding |              | Finished |
 |  Proj 10-02  | Global Thresholding                                     | Multiple uses | Finished |
 |  Proj 10-03  | Optimum Thresholding                                    |              | Finished |
+| Proj 10-03-2 | Optimum Thresholding Based on Otsu                      |              | Finished |
 |  Proj 10-04  | Region Growing                                          |              | Finished |
 |  Proj 11-01  | Skeletons                                               |              |   Todo   |
 |  Proj 11-02  | Fourier Descriptors                                     | Multiple uses |   Todo   |
