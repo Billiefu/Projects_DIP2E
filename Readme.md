@@ -91,10 +91,10 @@ The description and solution for the following experimental projects will be men
 |  Proj 10-03  | Optimum Thresholding                                    |              | Finished |
 | Proj 10-03-2 | Optimum Thresholding Based on Otsu                      |              | Finished |
 |  Proj 10-04  | Region Growing                                          |              | Finished |
-|  Proj 11-01  | Skeletons                                               |              |   Todo   |
-|  Proj 11-02  | Fourier Descriptors                                     | Multiple uses |   Todo   |
-|  Proj 11-03  | Texture                                                 |              |   Todo   |
-|  Proj 11-04  | Principal Components                                    |              |   Todo   |
+|  Proj 11-01  | Skeletons                                               |              | Finished |
+|  Proj 11-02  | Fourier Descriptors                                     | Multiple uses | Finished |
+|  Proj 11-03  | Texture                                                 |              | Finished |
+|  Proj 11-04  | Principal Components                                    |              | Finished |
 |  Proj 12-01  | Generating Pattern Classes                              | Multiple uses |   Todo   |
 |  Proj 12-02  | Minimum Distance Classifier                             |              |   Todo   |
 |  Proj 12-03  | Bayes Classifier                                        |              |   Todo   |
