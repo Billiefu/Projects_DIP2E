@@ -24,7 +24,7 @@ import matplotlib.pyplot as plt
 
 # Step 1: Pre-processing and Initial Visualization
 # Load the grayscale image and convert its data type to float64 for calculations.
-image = cv.imread('../../images/headCT-Vandy.bmp', cv.IMREAD_GRAYSCALE)
+image = cv.imread('../../images/kidney_original.bmp', cv.IMREAD_GRAYSCALE)
 image = np.float64(image)
 plt.axis('off')
 plt.imshow(image, cmap='gray')
@@ -47,9 +47,9 @@ image = filtering.filtering(image)
 sobel_x = filtering.filtering(image, [[-1, 0, 1], [-2, 0, 2], [-1, 0, 1]])
 # Sobel kernel for y-direction: [[-1, -2, -1], [0, 0, 0], [1, 2, 1]]
 sobel_y = filtering.filtering(image, [[-1, -2, -1], [0, 0, 0], [1, 2, 1]])
-# Calculate the gradient magnitude using the formula: $G = \sqrt{G_x^2 + G_y^2}$.
+# Calculate the gradient magnitude using the formula: $\nabla f \approx |G_x| + |G_y|}$.
 # This combines the horizontal and vertical gradients into a single image.
-sobel = np.sqrt(sobel_x ** 2 + sobel_y ** 2)
+sobel = np.abs(sobel_x) + np.abs(sobel_y)
 plt.axis('off')
 plt.imshow(sobel, cmap='gray')
 plt.title('Gradient Image')
