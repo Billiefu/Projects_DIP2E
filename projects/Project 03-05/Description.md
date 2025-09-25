@@ -4,9 +4,13 @@
 
 ### Question
 
-(a) Use the programs developed in Projects 03-03 and 03-04 to implement theLaplacian enhancement technique described in connection with Eq. (3.7-5). Use the mask shown in Fig. 3.39(d).
+(a) Use the programs developed in Projects 03-03 and 03-04 to implement theLaplacian enhancement technique described in connection with the equation below. Use the mask shown in Fig. 3.39(d).
 
-(b) Duplicate the results in Fig. 3.40. You will need to download Fig. 3.40(a).
+$$
+g(x,y)=\begin{cases} f(x,y)-\nabla^2f(x,y),\quad \text{if the Laplace mask has a negative central coefficient} \\ f(x,y)+\nabla^2f(x,y),\quad \text{if the Laplace mask has a positive central coefficient} \end{cases}
+$$
+
+(b) Duplicate the results in Fig. 3.40. You will need to download `blurry-moon.bmp`.
 
 ### Technical Discussion
 
