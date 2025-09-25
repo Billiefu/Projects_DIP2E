@@ -4,7 +4,7 @@
 
 ### Question
 
-Download Fig. 6.28(b) and duplicate Example 6.15, but segment instead the darkest regions in the image.
+Download `jupiter-Io-closeup.bmp` and duplicate Example 6.15 (Image segmentation based on RGB color space), but segment instead the darkest regions in the image.
 
 ### Technical Discussion
 
