@@ -19,52 +19,42 @@ import cv2 as cv
 from histogram import *
 
 
-def otsu_thresholding(image):
-    """Applies Otsu's method to find the optimal threshold for a grayscale image.
+def calculate_patch_stats(image_patch):
+    """Calculates the mean and standard deviation of a given image patch.
+    :param image_patch: A small NumPy array representing a region of the image.
+    :return: A tuple containing the mean and variance of the patch.
+    """
+    mean = np.mean(image_patch)
+    var = np.var(image_patch)
+    return mean, var
+
+
+def optimum_thresholding(image, mu1, mu2, sigma_sq, p1, p2):
+    """Applies Bayesian optimal thresholding to segment an image.
     :param image: Input grayscale image (NumPy array).
+    :param mu1: Mean of the first class (e.g., object).
+    :param mu2: Mean of the second class (e.g., background).
+    :param sigma_sq: Common variance of the two classes.
+    :param p1: Prior probability of the first class.
+    :param p2: Prior probability of the second class.
     :return: A tuple containing the thresholded binary image and the optimal threshold value.
     """
-    # Calculate the histogram of the input image.
-    hist, _ = histogram(image)
-    total_pixels = image.size
-    # Normalize the histogram to represent probability distribution.
-    normalized_hist = hist / total_pixels
+    if mu1 == mu2:
+        # Special case: If means are equal, the threshold is simply their average.
+        threshold = (mu1 + mu2) / 2
+    else:
+        log_ratio = np.log(p2 / p1)
+        # Calculate the optimal threshold using the Bayesian formula.
+        threshold = (mu1 + mu2) / 2 + (sigma_sq / (mu1 - mu2)) * log_ratio
 
-    best_threshold = -1
-    max_variance = 0
+    # Apply the calculated threshold to the image.
+    _, segmented_image = cv.threshold(image, threshold, 255, cv.THRESH_BINARY)
 
-    # Iterate through all possible threshold values (k) from 0 to 255.
-    for k in range(256):
-        # Calculate P1(k): the probability of the first class (foreground), from 0 to k.
-        p1 = np.sum(normalized_hist[:k+1])
-        # Calculate m(k): the mean of the first class.
-        m_k = np.sum(np.arange(k+1) * normalized_hist[:k+1])
-
-        # Skip if either class probability is zero to avoid division by zero.
-        if p1 == 0 or p1 == 1:
-            continue
-
-        # Calculate m_g: the global mean of the entire image.
-        m_g = np.sum(np.arange(256) * normalized_hist)
-
-        # Calculate the inter-class variance using the core Otsu formula.
-        sigma_b_squared = ((m_g * p1 - m_k)**2) / (p1 * (1 - p1))
-        print(f'The inter-class variance of {k} is: {np.sqrt(sigma_b_squared if sigma_b_squared > 0 else 0)}')
-
-        # Update the best threshold if the current variance is the maximum found so far.
-        if sigma_b_squared > max_variance:
-            max_variance = sigma_b_squared
-            best_threshold = k
-
-    # Apply the optimal threshold to the original image to get the binary segmented image.
-    _, thresholded_image = cv.threshold(image, best_threshold, 255, cv.THRESH_BINARY)
-
-    return thresholded_image, best_threshold
+    return segmented_image, threshold
 
 
-# Load the grayscale image.
-image = cv.imread('../../images/polymersomes.bmp', cv.IMREAD_GRAYSCALE)
-# Calculate and display the histogram of the original image.
+# Load the grayscale image and display its histogram and image.
+image = cv.imread('../../images/original_septagon.bmp', cv.IMREAD_GRAYSCALE)
 count, x = histogram(image)
 
 plt.axis('off')
@@ -76,11 +66,34 @@ plt.bar(x, count)
 plt.title('Histogram (self)')
 plt.show()
 
-# Apply Otsu's method to automatically segment the image.
-segmented_image, threshold = otsu_thresholding(image)
-print(f"The optimal threshold (k*) calculated by Otsu is: {threshold}")
+# Manually select small patches to represent the object and background classes.
+obj_patch = image[100:120, 100:120]  # Example patch from the object region.
+bg_patch = image[10:30, 10:30]      # Example patch from the background region.
 
-# Display the segmented image with the optimal threshold value in the title.
+# Compute the mean and variance for each patch to estimate the class parameters.
+mu1_est, var1_est = calculate_patch_stats(obj_patch)
+mu2_est, var2_est = calculate_patch_stats(bg_patch)
+
+# Assume a common variance for the two classes by averaging the estimated variances.
+sigma_sq_est = (var1_est + var2_est) / 2
+
+# Manually estimate the prior probabilities based on visual inspection of the image.
+# For example, if the object occupies approximately 20% of the image area.
+p1_est = 0.2
+p2_est = 0.8
+
+# Print the estimated parameters for clarity.
+print(f"Estimated Object Mean (mu1): {mu1_est:.2f}")
+print(f"Estimated Background Mean (mu2): {mu2_est:.2f}")
+print(f"Estimated Common Variance (sigma^2): {sigma_sq_est:.2f}")
+print(f"Estimated Object Probability (P1): {p1_est:.2f}")
+print(f"Estimated Background Probability (P2): {p2_est:.2f}")
+
+# Call the optimal thresholding function with the estimated parameters.
+segmented_image, threshold = optimum_thresholding(image, mu1_est, mu2_est, sigma_sq_est, p1_est, p2_est)
+print(f"The optimal threshold is: {threshold}")
+
+# Display the segmented image with the final threshold value in the title.
 plt.axis('off')
 plt.imshow(segmented_image, cmap='gray')
 plt.title(f'Segmented Image (Threshold = {threshold})')
