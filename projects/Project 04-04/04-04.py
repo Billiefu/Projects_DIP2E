@@ -42,7 +42,7 @@ def gaussian_lowpass(image, D0):
 
 
 # Load the grayscale image and convert it to float64 for numerical stability.
-image = cv.imread('../../images/ray_traced_bottle_original.bmp', cv.IMREAD_GRAYSCALE)
+image = cv.imread('../../images/testpattern1024.bmp', cv.IMREAD_GRAYSCALE)
 image = np.array(image, dtype=np.float64)
 
 # Display the original image.
