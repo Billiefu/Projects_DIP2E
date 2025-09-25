@@ -64,7 +64,7 @@ def global_thresholding(image, delta_T=1e-2):
 
 
 # Load the grayscale image.
-image = cv.imread('../../images/polymersomes.bmp', cv.IMREAD_GRAYSCALE)
+image = cv.imread('../../images/original_septagon.bmp', cv.IMREAD_GRAYSCALE)
 # Calculate and display the histogram of the original image.
 count, x = histogram(image)
 
