@@ -8,7 +8,7 @@ In order to complete this project, it is necessary that you find a program capab
 
 (a) Write a computer program that converts an arbitrary RGB color image to a web-safe RGB image (see Fig. 6.10 for a definition of web-safe colors).
 
-(b) Download the image in Fig. 6.8 and convert it to a web-safe RGB color image. Figure 6.8 is given in jpg format, so convert your result back to jpg (see comments at the beginning of this project). Explain the differences between your result and Fig. 6.8.
+(b) Download the image `RGB-full-color-cube.bmp` and convert it to a web-safe RGB color image. `RGB-full-color-cube.bmp` is given in bmp format, so convert your result to jpg (see comments at the beginning of this project). Explain the differences between your result and `RGB-full-color-cube.bmp`.
 
 ### Technical Discussion
 
