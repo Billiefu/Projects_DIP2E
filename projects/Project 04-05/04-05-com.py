@@ -68,7 +68,7 @@ def gaussian_lowpass(image, D0):
 
 # Load the main image and the template.
 image = cv.imread('../../images/crowd.bmp', cv.IMREAD_GRAYSCALE)
-template = cv.imread('../../images/face.bmp', cv.IMREAD_GRAYSCALE)
+template = cv.imread('../../images/attack-on-grandma.bmp', cv.IMREAD_GRAYSCALE)
 
 # Display the original image and template.
 plt.axis('off')

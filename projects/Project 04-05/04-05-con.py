@@ -21,7 +21,7 @@ from scipy.signal import convolve2d
 
 # Load the main image and the template.
 image = cv.imread('../../images/crowd.bmp', cv.IMREAD_GRAYSCALE)
-template = cv.imread('../../images/face.bmp', cv.IMREAD_GRAYSCALE)
+template = cv.imread('../../images/attack-on-grandma.bmp', cv.IMREAD_GRAYSCALE)
 
 # Convert images to float32 for accurate numerical computation during convolution.
 image = image.astype(np.float32)
