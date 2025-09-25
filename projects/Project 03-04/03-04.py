@@ -57,8 +57,8 @@ def filtering(image, core=None):
 
 
 # Load images for demonstration.
-image1 = cv.imread('../images/wingding-arrow-down.bmp', cv.IMREAD_GRAYSCALE)
-image2 = cv.imread('../images/wingding-arrow-up.bmp', cv.IMREAD_GRAYSCALE)
+image1 = cv.imread('../../images/wingding-arrow-down.bmp', cv.IMREAD_GRAYSCALE)
+image2 = cv.imread('../../images/wingding-arrow-up.bmp', cv.IMREAD_GRAYSCALE)
 
 # Display the original images.
 plt.axis('off')
