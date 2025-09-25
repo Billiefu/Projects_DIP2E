@@ -85,7 +85,7 @@ The description and solution for the following experimental projects will be men
 |  Proj 09-01  | Morphological and Other Set Operations                  | Multiple uses | Finished |
 |  Proj 09-02  | Boundary Extraction                                     | Multiple uses | Finished |
 |  Proj 09-03  | Connected Components                                    | Multiple uses | Finished |
-|  Proj 09-04  | Morphological Solution to Problem 9.27                  |              |   Todo   |
+|  Proj 09-04  | Morphological Solution to Problem 9.27                  |              | Finished |
 |  Proj 10-01  | Edge Detection Combined with Smoothing and Thresholding |              | Finished |
 |  Proj 10-02  | Global Thresholding                                     | Multiple uses | Finished |
 |  Proj 10-03  | Optimum Thresholding                                    |              | Finished |
