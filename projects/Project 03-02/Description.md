@@ -41,7 +41,7 @@ By following these steps, histogram equalization effectively expands the range o
 
 ### Experiment
 
-Based on the image `histogram.png`, the gray-level values are concentrated in the darker regions, which is reflected in the histogram as a cluster of values on the left side. This indicates a low-contrast image. To process it, a histogram was constructed. By comparing the "Histogram (self)" and "Histogram (ravel)" plots, it's clear that their distributions are almost identical. This confirms that the custom histogram calculation method is fully consistent with Python's built-in functions, verifying its correct theoretical implementation.
+Based on histograms, the gray-level values are concentrated in the darker regions, which is reflected in the histogram as a cluster of values on the left side. This indicates a low-contrast image. To process it, a histogram was constructed. By comparing the "Histogram (self)" and "Histogram (ravel)" plots, it's clear that their distributions are almost identical. This confirms that the custom histogram calculation method is fully consistent with Python's built-in functions, verifying its correct theoretical implementation.
 
 <center class ='img'>
 <img src="../../figures/03-02/histogram.png" width="80%">
