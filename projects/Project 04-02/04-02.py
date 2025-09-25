@@ -21,7 +21,7 @@ import matplotlib.pyplot as plt
 
 
 # Load the grayscale image and display the original.
-image = cv.imread('../../images/ray_traced_bottle_original.bmp', cv.IMREAD_GRAYSCALE)
+image = cv.imread('../../images/testpattern1024.bmp', cv.IMREAD_GRAYSCALE)
 plt.axis('off')
 plt.imshow(image, cmap='gray')
 plt.title('Original Image')

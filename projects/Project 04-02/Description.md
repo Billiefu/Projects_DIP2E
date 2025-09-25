@@ -4,7 +4,7 @@
 
 ### Question
 
-(a) Download Fig. 4.18(a) and compute its (centered) Fourier spectrum.
+(a) Download `testpattern1024.bmp` and compute its (centered) Fourier spectrum.
 
 (b) Display the spectrum.
 
