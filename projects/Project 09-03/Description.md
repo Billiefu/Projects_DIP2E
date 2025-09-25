@@ -6,7 +6,7 @@
 
 (a) Use your results from Project 09-01 to write a computer program capable of extracting (and counting) the connected components from a binary image.
 
-(b) Download Fig. Prob9.27 and use your program in (a) to count the number of connected components.
+(b) Download `bubbles_on_black_background.bmp` and use your program in (a) to count the number of connected components.
 
 ### Technical Discussion
 

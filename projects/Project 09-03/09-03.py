@@ -102,7 +102,7 @@ def extract_connected_components(binary_image, connectivity=8):
 
 
 # Load the image, apply a Gaussian blur for pre-processing, and convert to binary.
-image = cv.imread('../../images/region-filling-reflections.bmp', cv.IMREAD_GRAYSCALE)
+image = cv.imread('../../images/bubbles_on_black_background.bmp', cv.IMREAD_GRAYSCALE)
 _, binary_image = cv.threshold(image, 138, 255, cv.THRESH_BINARY)
 plt.axis('off')
 plt.imshow(binary_image, cmap='gray')
