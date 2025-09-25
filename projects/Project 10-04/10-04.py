@@ -73,12 +73,18 @@ def calculate_patch_stats(image_patch):
 
 
 # Load the grayscale image and initialize an empty image for the final combined result.
-image = cv.imread('../../images/defective_weld.bmp', cv.IMREAD_GRAYSCALE)
+image = cv.imread('../../images/original_septagon.bmp', cv.IMREAD_GRAYSCALE)
+# image = cv.imread('../../images/defective_weld.bmp', cv.IMREAD_GRAYSCALE)
+
 final_segmented_image = np.zeros_like(image, dtype=np.uint8)
 
-# Define seed points and corresponding 'k' values for adaptive thresholding.
-seed_points = [(254, 138), (245, 205), (252, 294), (239, 441)]
-k = [10, 0.6, 5, 4.5]
+# Define seed point and corresponding 'k' value of original_septagon.bmp for adaptive thresholding.
+seed_points = [(407, 326)]
+k = [1]
+
+# Define seed points and corresponding 'k' values of defective_weld.bmp for adaptive thresholding.
+# seed_points = [(254, 138), (245, 205), (252, 294), (239, 441)]
+# k = [10, 0.6, 5, 4.5]
 
 # Iterate through each seed point to grow a separate region.
 for i, seed_point in enumerate(seed_points):
