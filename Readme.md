@@ -22,7 +22,7 @@ All original code in this repository is licensed under the **[GNU Affero General
 * **Academic Integrity Clause**
   Prohibits submitting this code (or derivatives) as personal academic work without explicit authorization.
 
-The full legal text is available in the aforementioned license documents. Usage of this repository constitutes acceptance of these terms.
+The full legal text is available in the aforementioned license documents. Usage of this repository constitutes acceptance of these terms. The usage copyright for all source code files of this project are formally granted to the **Digital Image Processing Research Group, School of Computer Science and Engineering, Sun Yat-sen University**. This license covers all related research, teaching, and internal testing activities of the said research group.
 
 ## Environment
 
